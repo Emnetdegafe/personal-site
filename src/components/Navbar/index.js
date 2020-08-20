@@ -18,8 +18,8 @@ export default function Navigation() {
         <Nav.Link as={NavLink} to="/projects">
           projects
         </Nav.Link>
-        <Nav.Link as={NavLink} to="/about">
-          contacts
+        <Nav.Link as={NavLink} to="/contact">
+          contact
         </Nav.Link>
         <Nav.Link as={NavLink} to="/blog">
           blog
