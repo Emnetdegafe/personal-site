@@ -5,13 +5,13 @@ import { Navbar, Nav } from "react-bootstrap";
 
 export default function Navigation() {
   return (
-    <Navbar className="NavBar" expand="lg">
-      <Navbar.Brand as={NavLink} to="/">
+    <Navbar className='navbar'>
+      {/* <Navbar.Brand as={NavLink} to="/">
         Emnet Assefa Degafe
-      </Navbar.Brand>
+      </Navbar.Brand> */}
       <Navbar.Toggle />
       <Nav className="mr-auto">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
         <Nav.Link as={NavLink} to="/about">
           About
         </Nav.Link>

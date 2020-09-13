@@ -3,8 +3,8 @@ import { Jumbotron } from "react-bootstrap";
 
 export default function Home() {
   return (
-    <div>
-      <Jumbotron>Home</Jumbotron>
+    <div className='container'>
+      Emnet Assefa Degafe
     </div>
   );
 }
