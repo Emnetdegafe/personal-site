@@ -3,15 +3,20 @@ import "./Navigation.scss";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 
+const HorizontalLine = ({ color }) => (
+  <hr
+    style={{
+      borderTopColor: "black",
+      borderTopWidth:1,
+      marginInlineStart: 500,
+    }}
+  />
+);
+
 export default function Navigation() {
   return (
-    <Navbar className='navbar'>
-      {/* <Navbar.Brand as={NavLink} to="/">
-        Emnet Assefa Degafe
-      </Navbar.Brand> */}
-      <Navbar.Toggle />
-      <Nav className="mr-auto">
-        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+    <div>
+      <Navbar className="navbar">
         <Nav.Link as={NavLink} to="/about">
           About
         </Nav.Link>
@@ -24,7 +29,8 @@ export default function Navigation() {
         <Nav.Link as={NavLink} to="/blog">
           blog
         </Nav.Link>
-      </Nav>
-    </Navbar>
+      </Navbar>
+      <HorizontalLine />
+    </div>
   );
 }

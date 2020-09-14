@@ -6,18 +6,25 @@ import About from "../src/components/About";
 import projects from "../src/components/Projects";
 import Contact from "../src/components/Contact";
 import Navigation from "./components/Navbar";
+import { Container, Row , Col} from "react-bootstrap";
 
 function App() {
   return (
-    <div>
-        <Navigation />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/projects" component={projects} />
-        <Route path="/contact" component={Contact} />
-      </Switch>
-    </div>
+    <Container>
+      <Row>
+        <Col>
+          <div>
+            <Navigation />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/projects" component={projects} />
+              <Route path="/contact" component={Contact} />
+            </Switch>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

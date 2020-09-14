@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div>
       <h1>Got a message?</h1>
-      <div className="container">
+      <div className="wrap">
         <Form>
           <Form.Group as={Row}>
             <Form.Label>Name</Form.Label>
