@@ -30,7 +30,6 @@ export default function Navigation() {
           blog
         </Nav.Link>
       </Navbar>
-      <HorizontalLine />
     </div>
   );
 }

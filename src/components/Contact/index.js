@@ -3,27 +3,28 @@ import { Form, Button, Col, Row } from "react-bootstrap";
 import "./contact.scss";
 export default function Contact() {
   return (
-    <div>
-      <h1>Got a message?</h1>
+    <div className='contact-wrap'>
+      <h3>contact</h3>
       <div className="wrap">
+      <h1>Got a message?</h1>
         <Form>
           <Form.Group as={Row}>
             <Form.Label>Name</Form.Label>
-            <Col sm={3}>
+            <Col sm={5}>
               <Form.Control type="text" placeholder="name" />
             </Col>
           </Form.Group>
 
           <Form.Group as={Row} controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
-            <Col sm={3}>
+            <Col sm={5}>
               <Form.Control type="email" placeholder="Enter email" />
             </Col>
           </Form.Group>
 
           <Form.Group as={Row} controlId="exampleForm.ControlTextarea1">
             <Form.Label>Your Message</Form.Label>
-            <Col xs="6">
+            <Col xs="10">
               <Form.Control
                 as="textarea"
                 rows="3"
