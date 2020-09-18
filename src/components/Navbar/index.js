@@ -7,7 +7,7 @@ const HorizontalLine = ({ color }) => (
   <hr
     style={{
       borderTopColor: "black",
-      borderTopWidth:1,
+      borderTopWidth: 1,
       marginInlineStart: 500,
     }}
   />
@@ -15,17 +15,19 @@ const HorizontalLine = ({ color }) => (
 
 export default function Navigation() {
   return (
-      <Navbar className="navbar">
-        <Nav.Link as={NavLink} to="/projects">
-          projects
-        </Nav.Link>
-        <Nav.Link as={NavLink} to="/contact">
-          contact
-        </Nav.Link>
-        <Nav.Link as={NavLink} to="/blog">
-          blog
-        </Nav.Link>
-      </Navbar>
-
+    <Navbar className="navbar">
+      <Nav.Link as={NavLink} to="/">
+        home
+      </Nav.Link>
+      <Nav.Link as={NavLink} to="/projects">
+        projects
+      </Nav.Link>
+      <Nav.Link as={NavLink} to="/contact">
+        contact
+      </Nav.Link>
+      <Nav.Link as={NavLink} to="/blog">
+        blog
+      </Nav.Link>
+    </Navbar>
   );
 }
