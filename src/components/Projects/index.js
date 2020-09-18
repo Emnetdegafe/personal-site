@@ -1,10 +1,12 @@
 import React from 'react';
+import './Projects.css'
 
 export default function Projects() {
     return (
-        <div>
-           Projects 
-        </div>
+
+        <div className="project-container">
+        <h3>Projects</h3>
+      </div>
     );
 }
 

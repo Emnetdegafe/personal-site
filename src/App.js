@@ -6,14 +6,12 @@ import About from "../src/components/About";
 import projects from "../src/components/Projects";
 import Contact from "../src/components/Contact";
 import Navigation from "./components/Navbar";
-import { Jumbotron } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 function App() {
   return (
     <div>
-      <Jumbotron>
-        <Navigation />
-      </Jumbotron>
+      <Navigation />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />

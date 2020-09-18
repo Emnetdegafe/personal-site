@@ -1,0 +1,15 @@
+.project-container {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 300px;
+    height: 30rem;
+    width: 100%;
+    padding: 0 rem;
+    margin-left: 0rem;
+    background-color: #393f4d;
+    color: white;
+  }
+  h3 {
+      padding-left: 2rem;
+      padding-top: 2rem;
+  }

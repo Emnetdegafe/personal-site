@@ -1,0 +1,24 @@
+$myBackgroundColor: lightBlue;
+
+Form {
+  padding-top: 5rem;
+  padding-left: 6rem;
+  //   border: 1px solid lightblue;
+  background-color: $myBackgroundColor;
+  margin-top: 2rem;
+  width: 200%;
+}
+.contact-wrap {
+  display: flex;
+  justify-content: flex-start;
+  // width: auto;
+}
+.wrap {
+  text-align: center;
+  padding-left: 4rem;
+  padding-top: 3rem;
+}
+h3 {
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
