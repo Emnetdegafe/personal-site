@@ -1,28 +1,43 @@
 @import "../../styles/global.scss";
 
-h2 {
-  color: #2a9df2;
+h5 {
+  color: #393f4d;
+}
+// h3 {
+//   padding-top: -4rem;
+// }
+.About-intro {
+  padding-left: 2rem;
+  margin-top: 0.5rem;
+  text-align: left;
 }
 .home-container {
-  // padding: 2rem 4rem;
-text-align: center; 
-padding-top: 3rem; 
+  // padding-top: 0rem;
+  text-align: center;
 }
 .profile-wrap {
   display: flex;
+  margin-top: -3rem;
   flex-direction: row;
   justify-content: space-between;
-  padding: 4rem;
+  padding: 3rem;
+  padding-top: 0rem;
 }
-.image-wrap {
-border: 1px solid;
-height: 15rem;
-width: 15rem;
+
+.Image {
+  border-style: round;
+  border-radius: 50%;
+  height: 30rem;
+  width: 30rem;
+  padding: 5rem;
 }
-.connect-wrap{
+.connect-wrap {
+  margin-top: 5rem;
   display: inline-block;
+  height: 20rem;
   padding: 4rem;
-  background-color: blue;
+  background-color: #393f4d;
+  color: white;
 }
 .linkedin {
   width: 3rem;
@@ -34,4 +49,3 @@ width: 15rem;
   height: 3rem;
   padding-left: 1rem;
 }
-

@@ -5,18 +5,31 @@ import { icons } from "react-icons";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Projects from "../../components/Projects/index";
-import Contact from "../../components/Contact/index"
+import Contact from "../../components/Contact/index";
 
 export default function Home() {
   return (
     <div className="home-container">
-      <h3>Emnet Assefa Degafe</h3>
-      <h2>Frontend Web Developer</h2>
-      <div className='profile-wrap'>
-        <div className="image-wrap">
-          {/* <Image src="./pic.png"></Image> */}
-        </div>
+      <h4 className="About-intro">About Me</h4>
+        <h3>Emnet Assefa Degafe</h3>
+        <h5>Frontend Web Developer</h5>
+        <div className="profile-wrap">
+        <Image
+          className="Image"
+          src="https://pbs.twimg.com/profile_images/541675965840367617/r4CIPwnj.jpeg"
+        />
+
         <div className="connect-wrap">
+          <p>
+            Hi, welcome to my portfolio site! <br />I am a communications and
+            media professional turned to a full-stack web development. I am
+            anylitical and entusistinc person with solution oriented mind set. I
+            belive the sky is the limit when it comes to learning. I am a
+            motivated web developer constantly looking for the next new
+            challenge so I can grow professionally and mentally. Head to
+            Linkedin, if you'd like to see my professional expereince. You can
+            find the code for my projects on github.
+          </p>
           <a href="https://www.linkedin.com/in/emnetassefadegafe/">
             <FaLinkedin className="linkedin" />
           </a>

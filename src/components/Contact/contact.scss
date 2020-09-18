@@ -1,4 +1,4 @@
-$myBackgroundColor: lightBlue;
+$myBackgroundColor: #d4d4dc;
 
 Form {
   padding-top: 5rem;
@@ -7,6 +7,8 @@ Form {
   background-color: $myBackgroundColor;
   margin-top: 2rem;
   width: 200%;
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 .contact-wrap {
   display: flex;
