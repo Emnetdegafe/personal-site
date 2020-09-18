@@ -15,11 +15,7 @@ const HorizontalLine = ({ color }) => (
 
 export default function Navigation() {
   return (
-    <div>
       <Navbar className="navbar">
-        <Nav.Link as={NavLink} to="/about">
-          About
-        </Nav.Link>
         <Nav.Link as={NavLink} to="/projects">
           projects
         </Nav.Link>
@@ -30,6 +26,6 @@ export default function Navigation() {
           blog
         </Nav.Link>
       </Navbar>
-    </div>
+
   );
 }
