@@ -1,26 +1,24 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import "../../styles/global.scss";
 
+// .wrap {
+//   max-width: 540px;
+// }
 .navbar {
   display: flex;
   justify-content: flex-end;
-  padding: 4rem 8rem;
-  padding-bottom: 0.5em;
+  min-height: 300px;
+  height: 10rem;
   width: 100%;
-  opacity: 0.9;
-  margin-bottom: 1rem;
-  // border-bottom: 1px solid;
-  color: var(--nav-text-color);
+  background-color: #393f4d;
+  color: white;
 }
-
 a {
-  color: var(--nav-text-color);
+  margin-top: 10rem;
+  margin-bottom: 0em;
+  color: white;
 }
 a:hover {
   color: var(--nav-a-hover-color);
 }
-// .hr {
-//   border-top-color: "black";
-//   border-top-width:1;
-//   margin-inline-start: 500;
-// }
+
