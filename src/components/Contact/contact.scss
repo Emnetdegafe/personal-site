@@ -12,8 +12,8 @@ Form {
 }
 .contact-wrap {
   display: flex;
-  justify-content: flex-start;
-  // width: auto;
+  justify-content: center;
+  width: auto;
 }
 .wrap {
   text-align: center;
@@ -21,6 +21,42 @@ Form {
   padding-top: 3rem;
 }
 h3 {
-  padding-left: 2rem;
-  margin-top: 2rem;
+  padding-left: -4rem;
+  margin-top: 3rem;
+}
+.link {
+  color: black;
+}
+.linkedin {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
+  margin-left: auto;
+}
+.github {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
+.email {
+  width: 3rem;
+  height: 2rem;
+  margin-left: 3rem;
+}
+.icons-wrap {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 3rem auto;
+  border: 1px solid;
+  padding: 2rem 3rem 2rem;
+  // margin-top: 3rem
+}
+h5 {
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+  // align-self: center;
+}
+.icons-container {
+  align-content: center;
 }
