@@ -1,19 +1,18 @@
 import React, { useState } from "react";
-import { Form, Button, Col, Row } from "react-bootstrap";
 import "./contact.scss";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [message, setMessage] = useState("");
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    setName("");
-    setEmail("");
-    setMessage("");
-  }
+  // function handleSubmit(event) {
+  //   event.preventDefault();
+  //   setName("");
+  //   setEmail("");
+  //   setMessage("");
+  // }
 
   return (
     <div className="contact-wrap">

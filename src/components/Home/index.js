@@ -1,9 +1,7 @@
 import React from "react";
 import "./home.scss";
-import { Container, Row, Col, Image } from "react-bootstrap";
-import { icons } from "react-icons";
+import { Image } from "react-bootstrap";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import Projects from "../../components/Projects/index";
 import Contact from "../../components/Contact/index";
 
