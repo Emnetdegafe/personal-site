@@ -10,7 +10,7 @@ import Blog from "./components/Blog";
 
 function App() {
   return (
-    <div>
+    <div className='main-container'>
       <header className="header">
         <Navigation />
       </header>

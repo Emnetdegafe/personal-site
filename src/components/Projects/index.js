@@ -1,13 +1,60 @@
-import React from 'react';
-import './Projects.css'
+import React from "react";
+import { Carousel } from "react-bootstrap";
+import "./Projects.css";
+// import "./AllesOverFilm.jpg"
 
 export default function Projects() {
-    return (
+  return (
+    <div className="project-container">
+      <h3>project</h3>
+      <Carousel className="slide">
+        <Carousel.Item>
+          <a href="https://github.com/Emnetdegafe/allesOverFilm-client">
+            <img
+              className="project1"
+              src="images/AllesOverFilm.jpg"
+              alt="AllesOverFilm"
+            />
+          </a>
+          <Carousel.Caption>
+            <h4>AllesOverFilm Mobile App</h4>
+            <p>
+              Mobile app with bar code functionality used to compare prices of
+              items with onlne stores.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <a href="https://fervent-hugle-a9038a.netlify.app/">
+            <img
+              className="project2"
+              src={"/images/FlashCard.jpg"}
+              alt="Flash Card learning tool"
+            />
+          </a>
 
-        <div className="project-container">
-        <h3>Projects</h3>
-      </div>
-    );
+          <Carousel.Caption>
+            <h4>Falsh Card App</h4>
+            <p>
+              Learning tool to help students study using making flash cards. It
+              also have a Q and A game like function to help students answer
+              questions.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="project3"
+            src="images/Own_site.jpg"
+            alt="Personal Site"
+          />
+
+          <Carousel.Caption>
+            <h4>Personal Site</h4>
+            <p>personal portfolio site made using React, CSS and SCSS.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </div>
+  );
 }
-
-
