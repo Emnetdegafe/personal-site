@@ -7,45 +7,51 @@ export default function Projects() {
   return (
     <div className="project-container">
       <h3>project</h3>
-      <Carousel>
-        <Carousel.Item style={{ height: "20rem", width: "100%" }}>
-          <img
-            className="d-block w-100"
-            src="/images/HomeScreen.gif"
-            alt="AllesOverFilm"
-            style={{ height: "30rem ", padding: "2rem", width: "100%" }}
-          />
+      <Carousel className="slide">
+        <Carousel.Item>
+          <a href="https://github.com/Emnetdegafe/allesOverFilm-client">
+            <img
+              className="project1"
+              src="images/AllesOverFilm.jpg"
+              alt="AllesOverFilm"
+            />
+          </a>
           <Carousel.Caption>
-            <h4>AllesOverFilm - mobile app</h4>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item style={{ height: "20rem", width: "100%" }}>
-          <img
-            className="d-block w-100"
-            src={"/images/AllesOverFilm.jpg"}
-            alt="Flash Card learning tool"
-            style={{ height: "30rem ", padding: "2rem" }}
-          />
-
-          <Carousel.Caption>
-            <h4>Second slide label</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item style={{ height: "20rem", padding: "5rem" }}>
-          <img
-            className="d-block w-100"
-            src="https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg"
-            alt="Personal Site"
-            style={{ "height": "30rem ", "padding": "2rem" }}
-          />
-
-          <Carousel.Caption>
-            <h4>Third slide label</h4>
+            <h4>AllesOverFilm Mobile App</h4>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Mobile app with bar code functionality used to compare prices of
+              items with onlne stores.
             </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <a href="https://fervent-hugle-a9038a.netlify.app/">
+            <img
+              className="project2"
+              src={"/images/FlashCard.jpg"}
+              alt="Flash Card learning tool"
+            />
+          </a>
+
+          <Carousel.Caption>
+            <h4>Falsh Card App</h4>
+            <p>
+              Learning tool to help students study using making flash cards. It
+              also have a Q and A game like function to help students answer
+              questions.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="project3"
+            src="images/Own_site.jpg"
+            alt="Personal Site"
+          />
+
+          <Carousel.Caption>
+            <h4>Personal Site</h4>
+            <p>personal portfolio site made using React, CSS and SCSS.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
