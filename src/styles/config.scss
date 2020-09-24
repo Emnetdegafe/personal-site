@@ -2,6 +2,10 @@
 
 $headings-font-family: "Inconsolata", monospace;
 $headings-font-weight: 700;
+$primaryColor: #393f4d; 
+$secondaryColor: black;
+$textColor: white;
+$formBackgroundColor: #d4d4dc;
 
 // $font-family-base: "Libre Baskerville", serif;
 :root {
@@ -9,4 +13,10 @@ $headings-font-weight: 700;
   --nav-text-color: Black;
   --nav-a-hov-color: Blue;
 }
+// responsive size
 
+// @function set-size($width){
+//   @if(device === mobile) {
+//     @return 
+//   }
+// }

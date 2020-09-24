@@ -1,4 +1,6 @@
-@import "~bootstrap/scss/bootstrap";
+// @import "~bootstrap/scss/bootstrap";
+@import "./styles/global.scss";
+
 .App {
   text-align: center;
 }
@@ -30,7 +32,7 @@
 }
 footer {
   padding-top: 2rem;
-  background-color: #393f4d;
-  color: white;
+  background-color: $primaryColor;
+  color: $textColor;
   text-align: center;
 }
