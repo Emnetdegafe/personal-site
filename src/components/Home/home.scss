@@ -1,24 +1,25 @@
 @import "../../styles/global.scss";
 
-.title-text {
-  color: #393f4d;
-  padding-top: 0rem;
-}
-.me-name {
-  padding-top: -4rem;
-  margin-top: -4rem;
-}
-.About-intro {
-  padding-left: 2rem;
-  margin-top: 0.5rem;
-  text-align: left;
-}
 .home-container {
   // padding-top: 0rem;
   text-align: center;
   min-height: 100vh;
   margin: auto;
+  h4 {
+    padding-left: 2rem;
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+  .me-name {
+    padding-top: -4rem;
+    margin-top: -4rem;
+  }
+  h5 {
+    color: $primaryColor;
+    padding-top: 0rem;
+  }
 }
+
 .profile-wrap {
   display: flex;
   margin-top: -4rem;
@@ -26,38 +27,53 @@
   justify-content: space-between;
   padding: 3rem;
   padding-top: 0rem;
+
+  .Image {
+    border-style: round;
+    border-radius: 50%;
+    height: 30rem;
+    width: 30rem;
+    padding: 5rem;
+  }
 }
 
-.Image {
-  border-style: round;
-  border-radius: 50%;
-  height: 30rem;
-  width: 30rem;
-  padding: 5rem;
-}
 .connect-wrap {
   margin-top: 5rem;
   display: inline-block;
-  padding: 4rem;
-  background-color: #393f4d;
-  color: white;
-}
-.linkedin {
-  width: 3rem;
-  height: 3rem;
-  padding-right: 1rem;
-}
-.github {
-  width: 3rem;
-  height: 3rem;
-  padding-left: 1rem;
-}
-.skills span {
-  border: 1px solid lightblue;
-  border-radius: 5px;
-  margin: 8px;
-  background: white;
-  color: #393f4d;
-  padding: 3px 5px;
-  display: inline-block;
+  padding: 3rem;
+  background-color: $primaryColor;
+  color: $textColor;
+  border-radius: 3rem;
+  a {
+    color: $secondaryColor;
+  }
+  &:hover {
+    color: $textColor;
+  }
+  .gitLink {
+    display: flex;
+    justify-content: center;
+  }
+  .linkedin {
+    width: 3rem;
+    height: 3rem;
+    padding-right: 0rem;
+  }
+  .github {
+    width: 3rem;
+    height: 3rem;
+    padding-left: 0rem;
+  }
+  .skills-wrap span {
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    margin: 8px;
+    background: $textColor;
+    color: $primaryColor;
+    padding: 3px 5px;
+    display: inline-block;
+    &:hover {
+      background-color: $formBackgroundColor;
+    }
+  }
 }

@@ -1,10 +1,10 @@
-$myBackgroundColor: #d4d4dc;
+@import "../../styles/global.scss";
+
 
 Form {
   padding-top: 5rem;
   padding-left: 6rem;
-  //   border: 1px solid lightblue;
-  background-color: $myBackgroundColor;
+  background-color: $formBackgroundColor;
   margin-top: 2rem;
   width: 200%;
   margin-bottom: 5rem;
@@ -16,16 +16,12 @@ Form {
   width: auto;
 }
 .wrap {
-  text-align: center;
   padding-left: 4rem;
   padding-top: 3rem;
 }
-h3 {
-  padding-left: -4rem;
-  margin-top: 3rem;
-}
+
 .link {
-  color: black;
+  color: $secondaryColor;
 }
 .linkedin {
   width: 3rem;
@@ -47,16 +43,22 @@ h3 {
 .icons-wrap {
   display: inline-block;
   justify-content: space-between;
-  margin: 3rem auto;
+  margin: 2rem auto;
   border: 1px solid;
-  padding: 2rem 3rem 2rem;
+  border-radius: 1rem;
+  padding: 2rem 3rem ;
   // margin-top: 3rem
+  // background-color: lighten($primaryColor, 30%);
+
 }
-h5 {
-  padding-bottom: 1rem;
-  padding-top: 3rem;
-  // align-self: center;
-}
+// h5 {
+//   padding-bottom: 1rem;
+//   padding-top: 3rem;
+//   // align-self: center;
+// }
 .icons-container {
   align-content: center;
+  h5{
+    padding: 2rem
+  }
 }
