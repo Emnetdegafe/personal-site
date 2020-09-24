@@ -1,3 +1,5 @@
+@import "../../styles/global.scss";
+
 .project-container {
   display: flex;
   min-height: 300px;
@@ -5,8 +7,10 @@
   width: 100%;
   padding: 0 rem;
   margin-left: 0rem;
-  background-color: #393f4d;
-  color: white;
+  background-color: $primaryColor;
+  color: $textColor;
+
+
 }
 .slide {
   margin: auto;
@@ -28,14 +32,11 @@ text-align: center; */
 .mobile-app{
   padding-top: 4rem;
 }
-h3 {
-  padding-left: 2rem;
-  padding-top: 2rem;
-}
+
 .project1 {
   display: block;
   width: 40rem;
-  color: white;
+  color: $textColor;
   height: 20rem;
   padding: 2rem;
   padding-bottom: 2rem;
@@ -43,14 +44,18 @@ h3 {
 .project2 {
   display: block;
   width: 40rem;
-  color: white;
+  color: $textColor;
   height: 20rem;
   padding: 2rem;
 }
 .project3 {
   display: block;
   width: 40rem;
-  color: white;
+  color: $textColor;
   height: 20rem;
   padding: 2rem;
+}
+h3 {
+  padding-left: 2rem;
+  padding-top: 2rem;
 }

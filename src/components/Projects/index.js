@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import "./Projects.css";
 // import "./AllesOverFilm.jpg"
+import "./Projects.scss"
 
 export default function Projects() {
   return (
