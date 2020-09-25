@@ -23,16 +23,24 @@ export default function Home() {
             media professional turned to a full-stack web development. I am
             anylitical and entusistinc person with solution oriented mind set. I
             believe the sky is the limit when it comes to learning. I am a
-            motivated web developer constantly looking for new
-            challenges so I can grow professionally and personally. Head to my LinkedIn page
+            motivated web developer constantly looking for new challenges so I
+            can grow professionally and personally. Head to my LinkedIn page
             Linkedin, if you'd like to see my professional expereince. You can
             find the code for my projects on github.
           </p>
           <div className="gitLink">
-            <a href="https://www.linkedin.com/in/emnetassefadegafe/">
+            <a
+              href="https://www.linkedin.com/in/emnetassefadegafe/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin className="linkedin" />
             </a>
-            <a href="//github.com/Emnetdegafe">
+            <a
+              href="//github.com/Emnetdegafe"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub className="github" />
             </a>
           </div>

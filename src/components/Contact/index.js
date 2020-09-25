@@ -17,23 +17,32 @@ export default function Contact() {
   return (
     <div className="contact-wrap">
       {/* <h3>contact</h3> */}
-      <div className='icons-container'>
+      <div className="icons-container">
         <h5>Let's connect</h5>
         <div className="icons-wrap">
           <a
             className="link"
             href="https://www.linkedin.com/in/emnetassefadegafe/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaLinkedin className="linkedin" />
           </a>
 
-          <a className="link" href="//github.com/Emnetdegafe">
+          <a
+            className="link"
+            href="//github.com/Emnetdegafe"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub className="github" />
           </a>
 
           <a
             className="link"
             href="mailto:emnetdegafe@gmail.com?subject=Mail from our site"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaEnvelope className="email" />
           </a>
