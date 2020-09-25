@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 // import "./AllesOverFilm.jpg"
-import "./Projects.scss"
+import "./Projects.scss";
 
 export default function Projects() {
   return (
@@ -20,7 +20,7 @@ export default function Projects() {
             <h4>AllesOverFilm Mobile App</h4>
             <p>
               Mobile app with bar code functionality used to compare prices of
-              items with onlne stores.
+              items with online stores.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -34,11 +34,11 @@ export default function Projects() {
           </a>
 
           <Carousel.Caption>
-            <h4>Falsh Card App</h4>
+            <h4>Flash Card App</h4>
             <p>
-              Learning tool to help students study using making flash cards. It
-              also have a Q and A game like function to help students answer
-              questions.
+              Learning tool to help students study using flash cards. It also
+              have a Q and A game like function to help them remember
+              content of their subjects.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -51,7 +51,7 @@ export default function Projects() {
 
           <Carousel.Caption>
             <h4>Personal Site</h4>
-            <p>personal portfolio site made using React, CSS and SCSS.</p>
+            <p>personal portfolio site made using React, SCSS and CSS.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

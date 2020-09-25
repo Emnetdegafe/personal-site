@@ -5,7 +5,6 @@ import Home from "../src/components/Home";
 import projects from "../src/components/Projects";
 import Contact from "../src/components/Contact";
 import Navigation from "./components/Navbar";
-import { Container, Row, Col } from "react-bootstrap";
 import Blog from "./components/Blog";
 
 function App() {

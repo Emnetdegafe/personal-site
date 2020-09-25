@@ -3,15 +3,15 @@ import "./Navigation.scss";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 
-const HorizontalLine = ({ color }) => (
-  <hr
-    style={{
-      borderTopColor: "black",
-      borderTopWidth: 1,
-      marginInlineStart: 500,
-    }}
-  />
-);
+// const HorizontalLine = ({ color }) => (
+//   <hr
+//     style={{
+//       borderTopColor: "black",
+//       borderTopWidth: 1,
+//       marginInlineStart: 500,
+//     }}
+//   />
+// );
 
 export default function Navigation() {
   return (
