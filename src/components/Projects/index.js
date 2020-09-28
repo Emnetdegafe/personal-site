@@ -18,7 +18,7 @@ export default function Projects() {
   // );
   return (
     <div className="project-container">
-      <h3>project</h3>
+      <h3>projects</h3>
       {/* <hr style={{ color: "white", height: "2px" , width: "100%"}} /> */}
       {/* {param === "projects" ? <hr style={{color: "white", width: "2px"}}/> : null} */}
       <Carousel className="slide">
@@ -30,7 +30,7 @@ export default function Projects() {
           >
             <img
               className="project1"
-              src="images/AllesOverFilm.jpg"
+              src="images/AllesOVerFilm-CoverPage.png"
               alt="AllesOverFilm"
             />
           </a>

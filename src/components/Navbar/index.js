@@ -20,9 +20,9 @@ export default function Navigation() {
       <Nav.Link as={NavLink} to="/contact">
         contact
       </Nav.Link>
-      <Nav.Link as={NavLink} to="/blog">
+      {/* <Nav.Link as={NavLink} to="/blog">
         blog
-      </Nav.Link>
+      </Nav.Link> */}
     </Navbar>
   );
 }

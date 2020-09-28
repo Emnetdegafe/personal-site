@@ -1,24 +1,24 @@
 @import "../../styles/global.scss";
 
+@mixin projects {
+}
+
 .project-container {
   display: flex;
-  min-height: 300px;
   height: 30rem;
   width: 100%;
   padding: 0 rem;
   margin-left: 0rem;
   background-color: $primaryColor;
   color: $textColor;
-
-
+  .slide {
+    margin: 0;
+    // margin-top: 20vh;
+  }
 }
-.slide {
-  margin: auto;
-  /* align-items: center;
-text-align: center; */
-}
+
 .carousel-item {
-  display: block;
+  display: flex;
   height: 30rem;
 }
 .carousel-inner {
@@ -29,31 +29,35 @@ text-align: center; */
   padding: 2rem;
   margin-right: 10rem;
 }
-.mobile-app{
+.mobile-app {
   padding-top: 4rem;
 }
 
 .project1 {
   display: block;
-  width: 40rem;
+  width: 20rem;
   color: $textColor;
   height: 20rem;
   padding: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 8rem;
 }
 .project2 {
   display: block;
   width: 40rem;
   color: $textColor;
-  height: 20rem;
+  height: 25rem;
   padding: 2rem;
+  padding-bottom: 8rem;
+
 }
 .project3 {
   display: block;
   width: 40rem;
   color: $textColor;
-  height: 20rem;
+  height: 25rem;
   padding: 2rem;
+  padding-bottom: 8rem;
+
 }
 h3 {
   padding-left: 2rem;

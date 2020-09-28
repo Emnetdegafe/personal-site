@@ -37,7 +37,7 @@ export default function Home() {
               <FaLinkedin className="linkedin" />
             </a>
             <a
-              href="//github.com/Emnetdegafe"
+              href="https://www.github.com/Emnetdegafe"
               target="_blank"
               rel="noopener noreferrer"
             >
