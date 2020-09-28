@@ -23,7 +23,11 @@ export default function Projects() {
       {/* {param === "projects" ? <hr style={{color: "white", width: "2px"}}/> : null} */}
       <Carousel className="slide">
         <Carousel.Item>
-          <a href="https://github.com/Emnetdegafe/allesOverFilm-client">
+          <a
+            href="https://github.com/Emnetdegafe/allesOverFilm-client"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className="project1"
               src="images/AllesOverFilm.jpg"
@@ -39,7 +43,11 @@ export default function Projects() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <a href="https://fervent-hugle-a9038a.netlify.app/">
+          <a
+            href="https://fervent-hugle-a9038a.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className="project2"
               src={"/images/FlashCard.jpg"}
@@ -57,11 +65,17 @@ export default function Projects() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img
-            className="project3"
-            src="images/Own_site.jpg"
-            alt="Personal Site"
-          />
+          <a
+            herf="https://mystifying-newton-a39828.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="project3"
+              src="images/Own_site.jpg"
+              alt="Personal Site"
+            />
+          </a>
 
           <Carousel.Caption>
             <h4>Personal Site</h4>
