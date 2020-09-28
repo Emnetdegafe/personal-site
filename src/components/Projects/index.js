@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
-// import "./AllesOverFilm.jpg"
 import "./Projects.scss";
+import { useParams } from "react-router-dom";
 
 export default function Projects() {
+  const param = useParams();
+  console.log("params", param);
+
+  // const HorizontalLine = () => (
+  //   <hr
+  //     style={{
+  //       color: "white",
+  //       width: 2
+  //             // marginInlineStart: 500,
+  //     }}
+  //   />
+  // );
   return (
     <div className="project-container">
       <h3>project</h3>
+      {/* <hr style={{ color: "white", height: "2px" , width: "100%"}} /> */}
+      {/* {param === "projects" ? <hr style={{color: "white", width: "2px"}}/> : null} */}
       <Carousel className="slide">
         <Carousel.Item>
           <a href="https://github.com/Emnetdegafe/allesOverFilm-client">
@@ -37,8 +51,8 @@ export default function Projects() {
             <h4>Flash Card App</h4>
             <p>
               Learning tool to help students study using flash cards. It also
-              have a Q and A game like function to help them remember
-              content of their subjects.
+              have a Q and A game like function to help them remember content of
+              their subjects.
             </p>
           </Carousel.Caption>
         </Carousel.Item>

@@ -1,19 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navigation.scss";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 
-// const HorizontalLine = ({ color }) => (
-//   <hr
-//     style={{
-//       borderTopColor: "black",
-//       borderTopWidth: 1,
-//       marginInlineStart: 500,
-//     }}
-//   />
-// );
-
 export default function Navigation() {
+
+  // const [show, setShow] = useState("");
+
+
+
   return (
     <Navbar className="navbar">
       <Nav.Link as={NavLink} to="/">
