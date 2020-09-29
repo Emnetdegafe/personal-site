@@ -19,7 +19,7 @@ function App() {
         <Route path="/contact" component={Contact} />
         <Route path="/Blog" component={Blog} />
       </Switch>
-      <footer>
+      <footer className="footer">
         <p>@2020</p>
       </footer>
     </div>

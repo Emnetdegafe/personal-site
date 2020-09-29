@@ -3,19 +3,20 @@
 
 .App {
   text-align: center;
+}
   .header {
     min-height: 28vh;
-    background-color: #393f4d;
+    background-color: $primaryColor;
     align-content: flex-end;
     width: 100%;
   }
-  @media (max-width: 50rem) {
-    // display: block;
-  }
-  footer {
+
+  .footer {
     padding-top: 2rem;
     background-color: $primaryColor;
     color: $textColor;
     text-align: center;
+    width: 100%;
+    min-height: 5rem;
   }
-}
+
