@@ -4,35 +4,19 @@
 .App {
   text-align: center;
 }
-.header {
-  min-height: 28vh;
-  background-color: #393f4d;
-  align-content: flex-end;
-  width: 100%;
-}
-@media (max-width: 700px) {
-  .hide-sm {
-    display: none;
+  .header {
+    min-height: 28vh;
+    background-color: $primaryColor;
+    align-content: flex-end;
+    width: 100%;
   }
 
-  .grid-2,
-  .grid-3,
-  .grid-4 {
-    grid-template-columns: 1fr;
+  .footer {
+    padding-top: 2rem;
+    background-color: $primaryColor;
+    color: $textColor;
+    text-align: center;
+    width: 100%;
+    min-height: 5rem;
   }
-  .x-large {
-    font-size: 3rem;
-  }
-  .large {
-    font-size: 2rem;
-  }
-  .lead {
-    font-size: 1rem;
-  }
-}
-footer {
-  padding-top: 2rem;
-  background-color: $primaryColor;
-  color: $textColor;
-  text-align: center;
-}
+

@@ -1,59 +1,64 @@
 @import "../../styles/global.scss";
 
+
+
 .project-container {
   display: flex;
-  min-height: 300px;
-  height: 30rem;
+  height: 35rem;
   width: 100%;
-  padding: 0 rem;
+  padding: 2rem;
   margin-left: 0rem;
   background-color: $primaryColor;
   color: $textColor;
-
-
-}
-.slide {
-  margin: auto;
-  /* align-items: center;
-text-align: center; */
+  align-content: center;
+  &.carousel.slide {
+    margin: 0;
+    text-align: center;
+    
+  }
+  
 }
 .carousel-item {
-  display: block;
+  display: flex;
   height: 30rem;
+  .carousel-caption {
+    margin-right: 10rem;
+    align-self: center;
+    .caption-title{
+      text-align: center;
+    }
+  }
 }
 .carousel-inner {
   margin-left: 6rem;
   margin-right: 6rem;
 }
-.carousel-caption {
-  padding: 2rem;
-  margin-right: 10rem;
-}
-.mobile-app{
-  padding-top: 4rem;
-}
+
+
 
 .project1 {
   display: block;
   width: 40rem;
   color: $textColor;
-  height: 20rem;
+  height: 25rem;
   padding: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 8rem;
 }
 .project2 {
   display: block;
   width: 40rem;
   color: $textColor;
-  height: 20rem;
+  height: 25rem;
   padding: 2rem;
+  padding-bottom: 8rem;
 }
 .project3 {
   display: block;
   width: 40rem;
   color: $textColor;
-  height: 20rem;
+  height: 25rem;
   padding: 2rem;
+  padding-bottom: 8rem;
 }
 h3 {
   padding-left: 2rem;

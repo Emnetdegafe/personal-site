@@ -1,0 +1,110 @@
+// Widescreens
+@include mediaXL {
+}
+//Desctops & laptops
+@include mediaLg {
+}
+// tablets & small Laptops
+@include mediaMd {
+  body {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    .home-container {
+      text-align: center;
+
+      &.h4 {
+        text-align: center;
+      }
+
+      .me-name {
+        margin-top: 0;
+        padding-left: 0;
+      }
+    }
+    .profile-wrap {
+      flex-direction: column;
+      margin-top: auto;
+      .Image {
+        height: 20rem;
+        width: 20rem;
+        padding: 2rem;
+      }
+      .connect-wrap {
+        float: none;
+        margin-top: 0;
+        padding: 2rem;
+        width: 100%;
+        min-height: 0;
+      }
+    }
+    .project-container {
+      display: block;
+      height: 40rem;
+      padding-top: 1rem;
+
+      .carousel {
+        align-self: center;
+        padding: 0;
+        width: 100%;
+        .carousel-indicators {
+          padding: 0;
+          margin-right: 0;
+        }
+        .carousel-inner {
+          margin: 2rem;
+          .carousel-item {
+            padding-bottom: 3rem;
+            .project1 {
+              display: block;
+              width: 25rem;
+              color: $textColor;
+              height: 20rem;
+              padding-right: 3rem;
+              padding-left: 1rem;
+            }
+            .project2 {
+              display: block;
+              width: 25rem;
+              color: $textColor;
+              height: 20rem;
+              padding-right: 3rem;
+              padding-left: 1rem;
+            }
+            .project3 {
+              display: block;
+              width: 25rem;
+              color: $textColor;
+              height: 20rem;
+              padding-right: 3rem;
+              padding-left: 1rem;
+            }
+            .carousel-caption {
+              padding-top: 15px;
+              padding: 0;
+              margin-right: 0;
+              padding-right: 3rem;
+              h4 {
+                padding-left: 0.5rem;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    .contact-wrap {
+      h5 {
+        text-align: start;
+      }
+    }
+  }
+}
+
+// Smartphones
+@include mediaSm {
+  body {
+    align-items: center;
+    text-align: center;
+  }
+}

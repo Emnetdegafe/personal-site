@@ -29,7 +29,7 @@
   padding-top: 0rem;
 
   .Image {
-    border-style: round;
+    // border: 1px solid $secondaryTextColor;
     border-radius: 50%;
     height: 30rem;
     width: 30rem;
@@ -46,24 +46,15 @@
   border-radius: 3rem;
   a {
     color: $secondaryColor;
-  }
-  &:hover {
-    color: $textColor;
+    &:hover {
+      color: $textColor;
+    }
   }
   .gitLink {
     display: flex;
     justify-content: center;
   }
-  .linkedin {
-    width: 3rem;
-    height: 3rem;
-    padding-right: 0rem;
-  }
-  .github {
-    width: 3rem;
-    height: 3rem;
-    padding-left: 0rem;
-  }
+
   .skills-wrap span {
     border: 1px solid lightblue;
     border-radius: 5px;

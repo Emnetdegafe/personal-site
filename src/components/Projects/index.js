@@ -18,10 +18,10 @@ export default function Projects() {
   // );
   return (
     <div className="project-container">
-      <h3>project</h3>
+      <h4>projects</h4>
       {/* <hr style={{ color: "white", height: "2px" , width: "100%"}} /> */}
       {/* {param === "projects" ? <hr style={{color: "white", width: "2px"}}/> : null} */}
-      <Carousel className="slide">
+      <Carousel>
         <Carousel.Item>
           <a
             href="https://github.com/Emnetdegafe/allesOverFilm-client"
@@ -35,7 +35,7 @@ export default function Projects() {
             />
           </a>
           <Carousel.Caption>
-            <h4>AllesOverFilm Mobile App</h4>
+            <h4 className="caption-title">AllesOverFilm Mobile App</h4>
             <p>
               Mobile app with bar code functionality used to compare prices of
               items with online stores.
@@ -56,7 +56,7 @@ export default function Projects() {
           </a>
 
           <Carousel.Caption>
-            <h4>Flash Card App</h4>
+            <h4 className="caption-title">Flash Card App</h4>
             <p>
               Learning tool to help students study using flash cards. It also
               have a Q and A game like function to help them remember content of
@@ -78,7 +78,7 @@ export default function Projects() {
           </a>
 
           <Carousel.Caption>
-            <h4>Personal Site</h4>
+            <h4 className="caption-title">Personal Site</h4>
             <p>personal portfolio site made using React, SCSS and CSS.</p>
           </Carousel.Caption>
         </Carousel.Item>
