@@ -9,8 +9,18 @@
   body {
     align-items: center;
     text-align: center;
-    .home-container .me-name {
-      margin-top: 0;
+    margin-left: auto;
+    .home-container {
+      text-align: center;
+
+      &.h4 {
+        text-align: center;
+      }
+
+      .me-name {
+        margin-top: 0;
+        padding-left: 0;
+      }
     }
     .profile-wrap {
       flex-direction: column;
@@ -31,10 +41,9 @@
     .project-container {
       display: block;
       height: 40rem;
-      h3 {
-        text-align: start;
-      }
-      .slide {
+      padding-top: 1rem;
+
+      .carousel {
         align-self: center;
         padding: 0;
         width: 100%;
@@ -48,12 +57,11 @@
             padding-bottom: 3rem;
             .project1 {
               display: block;
-              width: 20rem;
-                // background-image: url('../../styles/HomeScreen.gif');
-
+              width: 25rem;
+              color: $textColor;
               height: 20rem;
-              padding-left: 5rem;
-              padding-bottom: 2rem;
+              padding-right: 3rem;
+              padding-left: 1rem;
             }
             .project2 {
               display: block;
@@ -85,13 +93,14 @@
         }
       }
     }
-    .contact-wrap{
-        h5{
-            text-align: start;
-        }
+    .contact-wrap {
+      h5 {
+        text-align: start;
+      }
     }
   }
 }
+
 // Smartphones
 @include mediaSm {
   body {
