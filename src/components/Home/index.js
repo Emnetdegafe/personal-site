@@ -8,9 +8,11 @@ import Contact from "../../components/Contact/index";
 export default function Home() {
   return (
     <div className="home-container">
-      <h4 className="About-intro">About Me</h4>
-      <h3 className="me-name">Emnet Assefa Degafe</h3>
-      <h5 className="title-text">Frontend Web Developer</h5>
+      <div className="titles">
+        <h4 className="About-intro">About Me</h4>
+        <h3 className="me-name">Emnet Assefa Degafe</h3>
+        <h5 className="title-text">Frontend Web Developer</h5>
+      </div>
       <div className="profile-wrap">
         <Image
           className="Image"

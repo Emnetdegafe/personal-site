@@ -2,19 +2,20 @@
 
 $headings-font-family: "Inconsolata", monospace;
 $headings-font-weight: 700;
-$primaryColor: #393f4d; 
+$primaryColor: #393f4d;
 $secondaryColor: black;
-$textColor: white;
+$primaryTextColor: #fff;
+$textColor: #c5bec4;
 $secondaryTextColor: #eece1a;
 $formBackgroundColor: #d4d4dc;
 $myImage: url(https://pbs.twimg.com/profile_images/541675965840367617/r4CIPwnj.jpeg);
 
 // $font-family-base: "Libre Baskerville", serif;
-:root {
-  --nav-primary-color: rgb(166, 226, 166);
-  --nav-text-color: Black;
-  --nav-a-hov-color: Blue;
-}
+// :root {
+//   --nav-primary-color: rgb(166, 226, 166);
+//   --nav-text-color: Black;
+//   --nav-a-hov-color: Blue;
+// }
 //media Query Mixins
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
@@ -27,7 +28,7 @@ $myImage: url(https://pbs.twimg.com/profile_images/541675965840367617/r4CIPwnj.j
   }
 }
 @mixin mediaLg {
-  @media screen and (min-width: 769px)and (max-width: 1170px) {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
     @content;
   }
 }
