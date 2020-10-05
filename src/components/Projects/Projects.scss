@@ -1,40 +1,39 @@
 @import "../../styles/global.scss";
 
-
-
 .project-container {
   display: flex;
-  height: 35rem;
+  height: 38rem;
   width: 100%;
-  padding: 2rem;
+  // padding: 2rem;
   margin-left: 0rem;
   background-color: $primaryColor;
-  color: $textColor;
+  color: $primaryTextColor;
   align-content: center;
-  &.carousel.slide {
-    margin: 0;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding-top: 2rem;
+  .carousel.slide {
+    margin: 4rem 3rem;
     text-align: center;
-    
+    align-self: center;
+    padding: 1rem;
+    padding-bottom: 0;
   }
-  
 }
 .carousel-item {
   display: flex;
   height: 30rem;
   .carousel-caption {
-    margin-right: 10rem;
+    margin-right: 15rem;
     align-self: center;
-    .caption-title{
+    .caption-title {
       text-align: center;
     }
   }
 }
 .carousel-inner {
-  margin-left: 6rem;
-  margin-right: 6rem;
+  margin: 2rem 6rem;
 }
-
-
 
 .project1 {
   display: block;

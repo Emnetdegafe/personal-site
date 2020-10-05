@@ -12,7 +12,8 @@ Form {
 .contact-wrap {
   display: flex;
   justify-content: center;
-  width: auto;
+  height:35rem;
+  background-color: $textColor;
 }
 .wrap {
   padding-left: 4rem;

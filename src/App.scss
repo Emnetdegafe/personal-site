@@ -5,13 +5,16 @@
   text-align: center;
 }
   .header {
-    min-height: 28vh;
+    min-height: 20vh;
     background-color: $primaryColor;
     align-content: flex-end;
     width: 100%;
+    border-bottom: 2px solid white;
+
   }
 
   .footer {
+    border-top: 2px solid white;
     padding-top: 2rem;
     background-color: $primaryColor;
     color: $textColor;
