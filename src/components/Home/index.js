@@ -21,14 +21,15 @@ export default function Home() {
 
         <div className="connect-wrap">
           <p className="connect-text">
-            Hi, welcome to my portfolio site! <br />I am a communications and
-            media professional turned to a full-stack web development. I am
-            anylitical and entusistinc person with solution oriented mind set. I
+          Hi, welcome to my portfolio site! <br/> I am a communications and
+            media professional turned full-stack web developer. I am
+            analytical and enthusiastic person with solution oriented mindset. I
             believe the sky is the limit when it comes to learning. I am a
             motivated web developer constantly looking for new challenges so I
             can grow professionally and personally. Head to my LinkedIn page
-            Linkedin, if you'd like to see my professional expereince. You can
+            Linkedin, if you'd like to see my professional experience. You can
             find the code for my projects on github.
+
           </p>
           <div className="gitLink">
             <a

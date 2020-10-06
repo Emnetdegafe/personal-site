@@ -7,20 +7,9 @@ export default function Projects() {
   const param = useParams();
   console.log("params", param);
 
-  // const HorizontalLine = () => (
-  //   <hr
-  //     style={{
-  //       color: "white",
-  //       width: 2
-  //             // marginInlineStart: 500,
-  //     }}
-  //   />
-  // );
   return (
     <div className="project-container">
       <h4 className="About-intro">projects</h4>
-      {/* <hr style={{ color: "white", height: "2px" , width: "100%"}} /> */}
-      {/* {param === "projects" ? <hr style={{color: "white", width: "2px"}}/> : null} */}
       <Carousel>
         <Carousel.Item>
           <a
