@@ -6,6 +6,7 @@ import projects from "../src/components/Projects";
 import Contact from "../src/components/Contact";
 import Navigation from "./components/Navbar";
 import Blog from "./components/Blog";
+import Resume from "./components/Resume";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/projects" component={projects} />
         <Route path="/contact" component={Contact} />
+        <Route path="/resume" component={Resume} />
         <Route path="/Blog" component={Blog} />
       </Switch>
       <footer className="footer">
