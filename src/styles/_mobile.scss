@@ -43,16 +43,15 @@
       height: 40rem;
       padding-top: 1rem;
 
-      .carousel {
-        align-self: center;
+      .carousel.slide {
+        margin: 3rem;
         padding: 0;
-        width: 100%;
         .carousel-indicators {
           padding: 0;
           margin-right: 0;
         }
         .carousel-inner {
-          margin: 2rem;
+          margin: 0;
           .carousel-item {
             padding-bottom: 3rem;
             .project1 {

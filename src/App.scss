@@ -4,17 +4,21 @@
 .App {
   text-align: center;
 }
+.main-container {
+  width: 100%;
+}
   .header {
     min-height: 20vh;
     background-color: $primaryColor;
     align-content: flex-end;
     width: 100%;
-    border-bottom: 2px solid white;
+    border-bottom: 4px solid white;
+    box-sizing: border-box;
 
   }
 
   .footer {
-    border-top: 2px solid white;
+    border-top: 4px solid white;
     padding-top: 2rem;
     background-color: $primaryColor;
     color: $textColor;

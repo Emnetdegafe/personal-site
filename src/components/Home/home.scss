@@ -9,13 +9,13 @@
 }
 .About-intro {
   padding-left: 2rem;
-  // margin-top: 0;
+  padding-top: 1rem;
   text-align: left;
   text-transform: uppercase;
+  box-sizing: border-box;
 }
 .me-name {
-  padding-top: -4rem;
-  margin-top: -4rem;
+  margin-top: -3rem;
 }
 h5 {
   color: $primaryColor;
@@ -31,6 +31,7 @@ h5 {
   background-color: $textColor;
 
   .Image {
+    float: left;
     // border: 1px solid $secondaryTextColor;
     border-radius: 50%;
     height: 30rem;
@@ -44,8 +45,10 @@ h5 {
   display: inline-block;
   padding: 3rem;
   background-color: $primaryColor;
+  border: 1px solid white;
   color: $primaryTextColor;
   border-radius: 3rem;
+  box-sizing: border-box;
   a {
     color: $secondaryColor;
     &:hover {
