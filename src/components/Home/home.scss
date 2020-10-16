@@ -9,30 +9,24 @@
 }
 .About-intro {
   padding-left: 2rem;
-  padding-top: 1rem;
   text-align: left;
   text-transform: uppercase;
   box-sizing: border-box;
+  padding-top: 0.5rem;
 }
-.me-name {
-  margin-top: -3rem;
-}
-h5 {
-  color: $primaryColor;
-  padding-top: 0rem;
-}
+
 .profile-wrap {
   display: flex;
-  margin-top: -3rem;
+  margin-top: -2rem;
   flex-direction: row;
   justify-content: space-between;
   padding: 3rem;
   padding-top: 0rem;
   background-color: $textColor;
+  box-sizing: border-box;
 
   .Image {
     float: left;
-    // border: 1px solid $secondaryTextColor;
     border-radius: 50%;
     height: 30rem;
     width: 30rem;
@@ -42,7 +36,7 @@ h5 {
 
 .connect-wrap {
   margin-top: 5rem;
-  display: inline-block;
+  // display: inline-block;
   padding: 3rem;
   background-color: $primaryColor;
   border: 1px solid white;

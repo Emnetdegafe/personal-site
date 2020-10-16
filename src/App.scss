@@ -7,23 +7,30 @@
 .main-container {
   width: 100%;
 }
-  .header {
-    min-height: 20vh;
-    background-color: $primaryColor;
-    align-content: flex-end;
-    width: 100%;
-    border-bottom: 4px solid white;
-    box-sizing: border-box;
+.header {
+  min-height: 30vh;
+  background-color: $primaryColor;
+  align-content: flex-end;
+  width: 100%;
+  border-bottom: 4px solid white;
+  box-sizing: border-box;
+}
+.me-name {
+  text-align: center;
+  color: $primaryTextColor;
+}
+h5 {
+  color: $primaryTextColor;
+  text-align: center;
+  padding-bottom: 2rem;
+}
 
-  }
-
-  .footer {
-    border-top: 4px solid white;
-    padding-top: 2rem;
-    background-color: $primaryColor;
-    color: $textColor;
-    text-align: center;
-    width: 100%;
-    min-height: 5rem;
-  }
-
+.footer {
+  border-top: 4px solid white;
+  padding-top: 2rem;
+  background-color: $primaryColor;
+  color: $textColor;
+  text-align: center;
+  width: 100%;
+  min-height: 5rem;
+}

@@ -13,6 +13,8 @@ function App() {
     <div className='main-container'>
       <header className="header">
         <Navigation />
+        <h2 className="me-name">Emnet Assefa Degafe</h2>
+        <h5 className="title-text">Frontend Web Developer</h5>
       </header>
       <Switch>
         <Route exact path="/" component={Home} />

@@ -12,6 +12,7 @@ Form {
 .contact-wrap {
   display: flex;
   justify-content: center;
+  text-align: center;
   height:35rem;
   background-color: $textColor;
 }
@@ -48,14 +49,14 @@ Form {
   display: inline-block;
   justify-content: space-between;
   margin: 2rem auto;
-  border: 1px solid;
+  border: 1px solid $primaryColor;
   border-radius: 1rem;
   padding: 2rem 3rem;
 
 }
 
 .icons-container {
-  align-content: center;
+text-align: center;
   h5 {
     padding: 2rem;
   }
