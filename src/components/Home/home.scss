@@ -34,23 +34,24 @@
   }
 }
 
-.connect-wrap {
+#connect-wrap {
   margin-top: 5rem;
-  // display: inline-block;
   padding: 3rem;
   background-color: $primaryColor;
-  border: 1px solid white;
+  border: 1px solid $secondaryTextColor;
   color: $primaryTextColor;
   border-radius: 3rem;
+  justify-content: center;
   box-sizing: border-box;
   a {
     color: $secondaryColor;
     &:hover {
-      color: $textColor;
+      color: $secondaryTextColor;
     }
   }
   .gitLink {
     display: flex;
+    flex-direction: row;
     justify-content: center;
   }
 
