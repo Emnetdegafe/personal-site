@@ -1,63 +1,67 @@
 @import "../../styles/global.scss";
 
-Form {
-  padding-top: 5rem;
-  padding-left: 6rem;
-  background-color: $formBackgroundColor;
-  margin-top: 2rem;
-  width: 200%;
-  margin-bottom: 5rem;
-  padding-bottom: 2rem;
-}
 .contact-wrap {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  height:35rem;
+  flex-direction: column;
+  min-height: 35rem;
   background-color: $textColor;
-}
-.wrap {
-  padding-left: 4rem;
-  padding-top: 3rem;
-}
 
-.link {
-  color: $secondaryColor;
-  &:hover {
-    color: $secondaryTextColor;
+  .wrap {
+    padding-left: 7rem;
+    padding-top: 2rem;
+    text-align: left;
+  }
+  Form {
+    padding-top: 3rem;
+    padding-left: 6rem;
+    background-color: $formBackgroundColor;
+    margin-top: 2rem;
+    max-width: 60rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    Button {
+      background-color: $primaryColor;
+      border: $primaryColor;
+    }
+  }
+
+  .icons-container {
+    text-align: center;
+    h4 {
+      padding: 2rem;
+      color: $primaryColor;
+    }
+
+    .icons-wrap {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 20rem;
+      background-color: $secondaryTextColor;
+      color: $primaryTextColor;
+      border-radius: 2rem;
+    }
   }
 }
-
 .linkedin {
   width: 3rem;
   height: 3rem;
-  margin-right: 2rem;
-  margin-left: auto;
+  margin: 1rem;
 }
 .github {
   width: 3rem;
   height: 3rem;
-  margin-left: 3rem;
-  margin-right: 2rem;
+  margin: 1rem;
 }
 .email {
   width: 3rem;
-  height: 2rem;
-  margin-left: 3rem;
+  height: 3rem;
+  margin: 1rem;
 }
-.icons-wrap {
-  display: inline-block;
-  justify-content: space-between;
-  margin: 2rem auto;
-  border: 1px solid $primaryColor;
-  border-radius: 1rem;
-  padding: 2rem 3rem;
-
-}
-
-.icons-container {
-text-align: center;
-  h5 {
-    padding: 2rem;
+.link {
+  color: $primaryTextColor;
+  &:hover {
+    color: $primaryColor;
   }
 }

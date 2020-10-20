@@ -93,27 +93,35 @@
       }
     }
     .contact-wrap {
-      h5 {
+      h4 {
         text-align: start;
+      }
+      .wrap {
+        width: auto;
+        align-content: flex-start;
+        padding-left: 2rem;
+      }
+      form {
+        width: fit-content;
+      }
+    }
+    .container {
+      align-content: left;
+      canvas {
+        z-index: 2rem;
+        margin-top: 3rem;
+        margin-left: 0;
+        border-radius: 1rem;
+        border: 1px solid darkgray;
       }
     }
   }
-  .container {
-    align-content:left;
-    canvas {
-      z-index: 2rem;
-      margin-top: 3rem;
-      margin-left: 0;
-      border-radius: 1rem;
-      border: 1px solid darkgray;
-    }
-  }
-}
 
-// Smartphones
-@include mediaSm {
-  body {
-    align-items: center;
-    text-align: center;
+  // Smartphones
+  @include mediaSm {
+    body {
+      align-items: center;
+      text-align: center;
+    }
   }
 }

@@ -7,7 +7,7 @@ import Contact from "../../components/Contact/index";
 
 export default function Home() {
   return (
-    <div className="home-container">
+    <section className="home-container">
       <div className="titles">
         <h4 className="About-intro">About Me</h4>
 
@@ -18,7 +18,7 @@ export default function Home() {
           src="https://pbs.twimg.com/profile_images/541675965840367617/r4CIPwnj.jpeg"
         />
 
-        <div className="connect-wrap">
+        <div id="connect-wrap">
           <p className="connect-text">
           Hi, welcome to my portfolio site! <br/> I am a communications and
             media professional turned full-stack web developer. I am
@@ -64,6 +64,6 @@ export default function Home() {
       </div>
       <Projects />
       <Contact />
-    </div>
+    </section>
   );
 }
