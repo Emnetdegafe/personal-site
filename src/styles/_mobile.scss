@@ -98,6 +98,16 @@
       }
     }
   }
+  .container {
+    align-content:left;
+    canvas {
+      z-index: 2rem;
+      margin-top: 3rem;
+      margin-left: 0;
+      border-radius: 1rem;
+      border: 1px solid darkgray;
+    }
+  }
 }
 
 // Smartphones
