@@ -6,6 +6,7 @@
   min-height: 35rem;
   background-color: $textColor;
 
+
   .wrap {
     padding-left: 7rem;
     padding-top: 2rem;
@@ -20,6 +21,8 @@
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+
     Button {
       background-color: $primaryColor;
       border: $primaryColor;
@@ -41,6 +44,8 @@
       background-color: $secondaryTextColor;
       color: $primaryTextColor;
       border-radius: 2rem;
+      z-index: 2;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
     }
   }
 }
@@ -61,6 +66,7 @@
 }
 .link {
   color: $primaryTextColor;
+
   &:hover {
     color: $primaryColor;
   }
