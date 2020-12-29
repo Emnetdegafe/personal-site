@@ -10,7 +10,7 @@ export default function Navigation() {
 
 
   return (
-    <Navbar className="navbar">
+    <nav className="navbar">
       <Nav.Link as={NavLink} to="/">
         home
       </Nav.Link>
@@ -23,6 +23,6 @@ export default function Navigation() {
       <Nav.Link as={NavLink} to="/resume">
         resume
       </Nav.Link>
-    </Navbar>
+    </nav>
   );
 }
