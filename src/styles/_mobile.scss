@@ -1,3 +1,4 @@
+
 // Widescreens
 @include mediaXL {
 }
@@ -10,6 +11,7 @@
     align-items: center;
     text-align: center;
     margin-left: auto;
+
     .home-container {
       text-align: center;
       padding-left: 2rem;
@@ -122,6 +124,51 @@
     body {
       align-items: center;
       text-align: center;
+      .header {
+        .navbar {
+          padding-top: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+      .menu-btn{
+        display: block;
+      }
+      .me-name {
+        padding-top: 2rem;
+        text-align: center;
+        
+      }
+      }
+      .home-container{
+        padding: 0;
+      }
+      .profile-wrap{
+        padding: 0;
+        .Image{
+          margin-left: 2rem
+        }
+      }
+      .contact-wrap{
+
+        .icons-container {
+          
+          .icons-wrap{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            top: 680px;
+            margin-left: 4rem
+            
+          }
+        }
+      }
+      .contact-wrap{
+        .wrap{
+          display: flex;
+          flex-direction: column;
+        }
+      }
     }
   }
 }
