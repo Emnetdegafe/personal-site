@@ -1,65 +1,86 @@
 @import "../../styles/global.scss";
 
-.project-container {
-  min-height: 45rem;
-  min-width: 100%;
-  box-sizing: border-box;
+.projects-container {
+  height: 100vh;
+  width: 100%;
   background-color: $primaryColor;
-  color: $primaryTextColor;
-  align-content: center;
   border-top: 2px solid $secondaryTextColor;
   border-bottom: 2px solid $secondaryTextColor;
-  padding-top: 2rem;
-  position: relative;
-  .carousel.slide {
-    position:absolute;
-    display: block;
-    margin: 2rem 3rem;
-    align-content: center;
-    text-align: center;
-    margin-left: 15rem;
-
-  }
-}
-.carousel-item {
-  display: flex;
-  height: 30rem;
-  .carousel-caption {
-    margin-right: 10rem;
-    align-self: center;
-    .caption-title {
+  margin: 0;
+  .projects-wrapper {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    
+    .flip-card {
+      background: transparent;
+      // width: 30rem;
+      height: 20rem;
+      margin: 2rem
+    }
+    .flip-card-inner{
+      position: relative;
+      width: 100%;
+      height: 100%;
       text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      padding: 1rem
+      
+      // border: 1px solid $secondaryTextColor;
+      
+    }
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    .card-front, .card-back{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+      background-color: $primaryColor;
+      border-radius: 30px;
+      box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+      
+      
+      h4 {
+        padding: 1rem;
+      }
+    }
+
+    .card-front{
+      background-color: $primaryColor;
+      color: $primaryTextColor
+    }
+    .card-back{
+      background-color: $primaryTextColor;
+      color: $primaryColor;
+      transform: rotateY(180deg);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 0.5rem
+      
+      
+    }
+    .project-img {
+      width: 100%;
+      height: 87%;
+      border-radius: 30px;
+      
+      
+    }
+    .p {
+      padding-top: 2rem;
     }
   }
 }
-.carousel-inner {
-  margin: 2rem 6rem;
-}
 
-.project1 {
-  display: block;
-  width: 40rem;
-  color: $textColor;
-  height: 25rem;
-  padding: 2rem;
-  padding-bottom: 8rem;
-}
-.project2 {
-  display: block;
-  width: 40rem;
-  color: $textColor;
-  height: 25rem;
-  padding: 2rem;
-  padding-bottom: 8rem;
-}
-.project3 {
-  display: block;
-  width: 40rem;
-  color: $textColor;
-  height: 25rem;
-  padding: 2rem;
-  padding-bottom: 8rem;
-}
+
+
+
 h3 {
   padding-left: 2rem;
   padding-top: 2rem;
