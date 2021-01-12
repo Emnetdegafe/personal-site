@@ -22,7 +22,7 @@ export default function Projects() {
   },
   {
     projectName: " The Idealists",
-    gitLink: "https://github.com/dashakrolik/Idealists-client",
+    gitLink: "https://imaengine.io/CofounderStart",
     discription: "I worked with a team of 5 to add a co-founder section of their existing plateform that turns selected ideas into future companies.",
     tech: "React, TypeORMs, StyledComponents, Material UI",
     imageUrl: "../../images/Idealists.png"

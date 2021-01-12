@@ -14,6 +14,7 @@
 
     .home-container {
       text-align: center;
+      align-items: center;
       &.h4 {
         text-align: center;
       }
@@ -26,6 +27,9 @@
     .profile-wrap {
       flex-direction: column;
       margin-top: auto;
+      justify-content: center;
+      align-items: center;
+
       .Image {
         height: 20rem;
         width: 20rem;
@@ -40,7 +44,7 @@
       }
     }
     .projects-container{
-
+align-items: center;
       height: 90rem;
     .projects-wrapper {
         display: grid;
@@ -90,13 +94,15 @@
           flex-direction: column;
           justify-content: flex-start;
         }
-      .menu-btn{
-        display: block;
-      }
-      .me-name {
-        padding-top: 2rem;
+        .menu-btn{
+          display: block;
+        }
+        .me-name {
+          padding-top: 2rem;
+          text-align: center;
+        }
+      .title-text {
         text-align: center;
-        
       }
       }
       .home-container{
@@ -107,18 +113,33 @@
         .Image{
           margin-left: 2rem
         }
+        #connect-wrap {
+          margin: 2rem;
+        }
       }
       .contact-wrap{
-
+        min-height: 40rem;
+        Form {
+          padding-right: 2rem
+        }
         .icons-container {
-          
+          align-items: center;
+
           .icons-wrap{
             display: flex;
             flex-direction: row;
             position: absolute;
-            top: 680px;
-            margin-left: 4rem
-            
+            top: 3470px;
+            margin-left: 7rem;
+            background: none;
+            border: none;
+            box-shadow: none;
+            .link {
+              color: $primaryColor
+            }
+            .link:hover {
+              color:$secondaryTextColor
+            }
           }
         }
       }
