@@ -15,7 +15,7 @@ export default function Projects() {
     imageUrl: "../../images/AllesOverFilm.jpg"
   }, {
     projectName: " FlashCards Learning Tool",
-    gitLink: "https://github.com/Emnetdegafe/allesOverFilm-client",
+    gitLink: "https://flashcard-learning-tool.netlify.app/",
     discription: "A learning tool to help students study using flash cards. It also has a Q and A game like function to help them remember content of their subjects.",
     tech: "React, React-Redux, SASS, CSS",
     imageUrl: "../../images/FlashCard.jpg"
@@ -27,14 +27,6 @@ export default function Projects() {
     tech: "React, TypeORMs, StyledComponents, Material UI",
     imageUrl: "../../images/Idealists.png"
   },
-    // {
-    //     projectName: "Konjo Bet Home Styling",
-    //     gitLink: "",
-    //     discription: "text 3", 
-    //     tech: "HTML, CSS, JavaScript",
-    //     imageUrl: ""
-
-    //   }
   ]
   return (
 
