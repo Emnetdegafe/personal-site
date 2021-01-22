@@ -1,7 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./contact.scss";
-import {Form, Row, Col, Button} from 'react-bootstrap'
+import { Form, Row, Col, Button } from 'react-bootstrap'
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -21,7 +22,10 @@ export default function Contact() {
 
       <div className="wrap">
         <h2>Got a message?</h2>
-        <Form>
+        <Form name="contact" method="POST"
+          data-netlify="true" data-netlify-honeypot="bot-field" action="/Success">
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden><lable>Don't fill this out unless you are a bot: <input name="bot-field" /></lable></p>
           <Form.Group as={Row}>
             <Form.Label>Name</Form.Label>
             <Col sm={5}>
@@ -31,6 +35,7 @@ export default function Contact() {
                 required
                 onChange={(e) => setName(e.target.value)}
                 value={name}
+                name="name"
               />
             </Col>
           </Form.Group>
@@ -44,6 +49,7 @@ export default function Contact() {
                 required
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
+                name="email"
               />
             </Col>
           </Form.Group>
@@ -57,6 +63,7 @@ export default function Contact() {
                 placeholder="enter your message here ..."
                 onChange={(e) => setMessage(e.target.value)}
                 value={message}
+                name="message"
               />
             </Col>
           </Form.Group>

@@ -7,6 +7,7 @@ import Contact from "../src/components/Contact";
 import Navigation from "./components/Navbar";
 import Blog from "./components/Blog";
 import Resume from "./components/Resume";
+import Success from "./components/Contact/Success";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
         <Route path="/projects" component={projects} />
         <Route path="/contact" component={Contact} />
         <Route path="/resume" component={Resume} />
-        <Route path="/Blog" component={Blog} />
+        <Route path="/blog" component={Blog} />
+        <Route path="/success" component={Success}/>
       </Switch>
       <footer className="footer">
         <p> &copy;2020 emnetdegafe</p>
