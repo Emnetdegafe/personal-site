@@ -19,14 +19,13 @@ export default function Home() {
         />
 
         <div id="connect-wrap">
+          <h3>Hi there,</h3>
           <p className="connect-text">
-          Hi, welcome to my portfolio site! <br/> I am a communications and
-            media professional turned full-stack web developer. I am
-            analytical and enthusiastic person with solution oriented mindset. I
-            believe the sky is the limit when it comes to learning. I am a
-            motivated web developer constantly looking for new challenges so I
-            can grow professionally and personally. Head to my LinkedIn page
-            Linkedin, if you'd like to see my professional experience. You can
+            welcome to my portfolio site! Thanks for dropping by!<br />
+            Emnet here, a frontend developer with background in communications and media.
+            I am a frontend enthusiast with solution oriented mindset. I am constantly looking for new challenges so I
+            can grow professionally and personally. I believe the sky is the limit when it comes to learning. So if you have a cool idea we can work on together, drop me a line.
+            Head to my LinkedIn page, if you'd like to see my professional experience. You can
             find the code for my projects on github.
 
           </p>

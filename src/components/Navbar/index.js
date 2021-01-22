@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navigation.scss";
 import { NavLink } from "react-router-dom";
-import { Navbar, Nav } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 
 export default function Navigation() {
-
-  // const [show, setShow] = useState("");
 
 
 
