@@ -23,7 +23,7 @@ export default function Contact() {
       <div className="wrap">
         <h2>Got a message?</h2>
         <Form name="contact" method="POST"
-          data-netlify="true" data-netlify-honeypot="bot-field" action="/Success">
+          netlify netlify-honeypot="bot-field" action="/success">
           <input type="hidden" name="form-name" value="contact" />
           <p hidden><lable>Don't fill this out unless you are a bot: <input name="bot-field" /></lable></p>
           <Form.Group as={Row}>
