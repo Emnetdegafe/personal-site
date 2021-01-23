@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./contact.scss";
 import { Form, Row, Col, Button } from 'react-bootstrap'
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import {useHistory} from "react-router-dom"
+import { useHistory } from "react-router-dom"
 
 
 export default function Contact() {
@@ -14,8 +14,8 @@ export default function Contact() {
 
   const encode = (data) => {
     return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
   }
 
 
@@ -23,13 +23,13 @@ export default function Contact() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...name, ...email, ...message })
+      body: encode({ "form-name": "contact", name, email, message })
     })
       .then(() => history.push("/success"))
       .catch(error => alert(error));
 
     e.preventDefault();
-    console.log(name, email , message)
+    console.log(name, email, message)
   };
 
   return (
