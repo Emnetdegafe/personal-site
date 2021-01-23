@@ -9,12 +9,17 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    setName("");
-    setEmail("");
-    setMessage("");
-  }
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...setName, ...setEmail, ...setMessage })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
 
   return (
     <section className="contact-wrap">
