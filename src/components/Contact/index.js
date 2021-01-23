@@ -9,7 +9,15 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  handleSubmit = e => {
+
+  const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
+
+  const handleSubmit = e => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -27,7 +35,7 @@ export default function Contact() {
 
       <div className="wrap">
         <h2>Got a message?</h2>
-        <Form >
+        <Form onSubmit={handleSubmit}>
           <p hidden><lable>Don't fill this out unless you are a bot: <input name="bot-field" /></lable></p>
           <Form.Group as={Row}>
             <Form.Label>Name</Form.Label>
@@ -75,7 +83,6 @@ export default function Contact() {
             style={{ alignItems: "center" }}
             variant="primary"
             type="submit"
-            onClick={handleSubmit}
           >
             Submit
           </Button>
