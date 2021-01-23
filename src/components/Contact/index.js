@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./contact.scss";
 import { Form, Row, Col, Button } from 'react-bootstrap'
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import {Redirect} from "react-router"
 
 
 export default function Contact() {
@@ -21,9 +22,9 @@ export default function Contact() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...setName, ...setEmail, ...setMessage })
+      body: encode({ "form-name": "contact", name, email, message })
     })
-      .then(() => alert("Success!"))
+      .then(() => < Redirect to="/success"/>)
       .catch(error => alert(error));
 
     e.preventDefault();
