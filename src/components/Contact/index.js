@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import "./contact.scss";
 import { Form, Row, Col, Button } from 'react-bootstrap'
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import {Redirect} from "react-router"
+import {useHistory} from "react-router-dom"
 
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const history = useHistory()
 
 
   const encode = (data) => {
@@ -22,12 +23,13 @@ export default function Contact() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message })
+      body: encode({ "form-name": "contact", ...name, ...email, ...message })
     })
-      .then(() => < Redirect to="/success"/>)
+      .then(() => history.push("/success"))
       .catch(error => alert(error));
 
     e.preventDefault();
+    console.log(name, email , message)
   };
 
   return (
