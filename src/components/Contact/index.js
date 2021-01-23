@@ -29,7 +29,6 @@ export default function Contact() {
       .catch(error => alert(error));
 
     e.preventDefault();
-    console.log(name, email, message)
   };
 
   return (

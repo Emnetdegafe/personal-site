@@ -34,7 +34,6 @@ export default function Projects() {
       <h4 className="About-intro">projects</h4>
       <div className="projects-wrapper">
         {projects.map((project, index) => {
-          console.log('projects', project.projectName)
 
           return (
             <div className="flip-card" key={index}>

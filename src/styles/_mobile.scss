@@ -4,6 +4,9 @@
 }
 //Desctops & laptops
 @include mediaLg {
+  .contact-wrap Form{
+    width: auto;
+  }
 }
 // tablets & small Laptops
 @include mediaMd {
@@ -11,6 +14,11 @@
     align-items: center;
     text-align: center;
     margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+  .main-container{
+    overflow-x: hidden
+  }
 
     .home-container {
       text-align: center;
@@ -58,6 +66,7 @@ align-items: center;
       
     }
     .contact-wrap {
+      align-items: center;
       h4 {
         text-align: start;
       }
@@ -67,7 +76,10 @@ align-items: center;
         padding-left: 2rem;
       }
       form {
-        width: fit-content;
+        width: auto;
+      }
+      .icons-wrap{
+        left: 0
       }
     }
     .container {
@@ -79,6 +91,14 @@ align-items: center;
         border-radius: 1rem;
         border: 1px solid darkgray;
       }
+    }
+    .success-message{
+      width: auto;
+      height: auto;
+      margin: 2rem;
+      align-self: center;
+      padding: 1rem;
+
     }
   }
 
@@ -119,8 +139,10 @@ align-items: center;
       }
       .contact-wrap{
         min-height: 40rem;
+        align-items: center;
         Form {
-          padding-right: 2rem
+          padding-right: 2rem;
+          width: auto
         }
         .icons-container {
           align-items: center;
@@ -128,9 +150,9 @@ align-items: center;
           .icons-wrap{
             display: flex;
             flex-direction: row;
-            position: absolute;
-            top: 3470px;
-            margin-left: 7rem;
+            position: relative;
+            top: 0;
+            margin: auto;
             background: none;
             border: none;
             box-shadow: none;
