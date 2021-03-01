@@ -17,7 +17,7 @@
 
 .profile-wrap {
   display: flex;
-  margin-top: -2rem;
+  margin-top: -4rem;
   flex-direction: row;
   justify-content: space-between;
   padding: 3rem;
@@ -34,8 +34,8 @@
 
 #connect-wrap {
 
-  margin-top: 5rem;
-  padding: 3rem;
+  margin-top: 2rem;
+  padding: 2rem;
   background-color: $primaryColor;
   border: 1px solid $secondaryTextColor;
   color: $primaryTextColor;
@@ -54,17 +54,24 @@
     flex-direction: row;
     justify-content: center;
   }
-
+.skills-wrap .skills {
+  border: white 1px solid;
+  border-radius: 10px;
+  padding: 10px 5px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 1.0);
+}
   .skills-wrap span {
-    border: 1px solid lightblue;
     border-radius: 5px;
-    margin: 8px;
-    background: $textColor;
+    margin: 8px 12px;
     color: $primaryColor;
-    padding: 3px 5px;
+    padding: 5px;
     display: inline-block;
     &:hover {
       background-color: $formBackgroundColor;
     }
+  }
+  .logos{
+    height: 4rem;
+    width: auto;
   }
 }
